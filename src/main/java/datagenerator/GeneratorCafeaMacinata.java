@@ -5,14 +5,14 @@ import java.util.Random;
 
 import com.mycompany.cafea.CafeaMacinata;
 
-public class GeneratorCafeaMacinata {
+public class GeneratorCafeaMacinata { 
 
-    public static String brand="Nescafe"; 
+    public static String brand="Nescafe";
 
     static private String[] tipuri = new String[]{"arabica","robusta","liberica"};
 
-    // metoda statica, poate fi apelata fara a instantia clasa
-	public static ArrayList<CafeaMacinata> genereazaRandomCafeaMacinata(int n){
+    // metoda statica, poate fi apelata fara a instantia clasa 
+	public static ArrayList<CafeaMacinata> genereazaRandomCafeaMacinata(int n){  
         ArrayList<CafeaMacinata> listaCafeaMacinata = new ArrayList<CafeaMacinata>();
         CafeaMacinata unCafeaMacinata;
         for (int i=0;i<n;i++) {
@@ -23,6 +23,7 @@ public class GeneratorCafeaMacinata {
         }
         return listaCafeaMacinata;
     }
+
     // metoda statica, poate fi apelata fara a instantia clasa
     public static CafeaMacinata[] genereazaNisteCafeaMacinata(int n) {
         CafeaMacinata[] listaCafeaMacinata= new CafeaMacinata[n];
