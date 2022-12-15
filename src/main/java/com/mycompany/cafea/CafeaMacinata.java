@@ -66,6 +66,31 @@ public class CafeaMacinata extends Cafea {
     @Override // suprascriem metoda toString din clasa parinte (Cafea)  
     public String toString(){
     return super.toString()+"\nTipul de macinare: "+tipulDeMacinare+"\nTipul de aparat: "+tipulDeAparat;
-
 }
+
+    //exercitiul 4 două metode care să parcurgă vectorul și să afișeze instanțele care satisfac două condiții introduse de utilizator.
+    // metoda pentru afisarea conditiei de macinare a cafelei si tipul de aparat de preparat cafea
+    void afisareConditie(String tipDeMacinare, String tipDeAparat){ 
+    //metoda cu parametri pentru a verifica daca tipul de macinare si tipul de aparat sunt corecte, 
+    //iar daca sunt afisam informatiile despre cafea macinata, altfel afisam mesajul de eroare
+        if(this.tipulDeMacinare.equals("fin") && this.tipulDeAparat.equals("manual")){ 
+            //verificam daca tipul de macinare si tipul de aparat sunt corecte
+            System.out.println("Conditie indeplinita pentru "+this.toString()); 
+            //apelam metoda toString pentru a afisa informatiile despre cafea macinata
+        }
+        else{
+            System.out.println("Conditie neindeplinita pentru "+this.toString()); 
+        }
+    }
+    // metoda pentru afisarea conditiei de preparare a cafelei (capuccino)
+    void afisareConditie2(String Preparare)
+    { //metoda cu parametru pentru a verifica daca prepararea este capuccino, 
+        //iar daca este, afisam informatiile despre cafea macinata, altfel afisam mesajul de eroare
+        if(super.getPreparare().equals("capuccino")) 
+        //apelam metoda getter din clasa parinte (Cafea) pentru a obtine valoarea variabilei preparare
+        System.out.println("Conditie indeplinita pentru "+this.toString()); 
+        //apelam metoda toString pentru a afisa informatiile despre cafea macinata
+        else
+        System.out.println("Conditie neindeplinita pentru "+this.toString());
+    }
 }

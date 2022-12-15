@@ -2,6 +2,8 @@ package com.mycompany.cafea;
 
 public class App 
 {
+   
+
     public static void main( String[] args )
     {
         Cafea c1=new Cafea();
@@ -46,4 +48,6 @@ public class App
         cc3.degustare();
         System.out.println();
     }
+
 }
+

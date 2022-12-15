@@ -157,4 +157,5 @@ public class Cafea {
         System.out.println("Cafeaua se degusta in functie de brand, nivelul de prajire, metoda de extractie,  "
                 + "intensitate, densitate, culoare, preparare, aciditate, corpolenta si modul de procesare");
     }
+    
 }
