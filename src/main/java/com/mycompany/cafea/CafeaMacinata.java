@@ -5,7 +5,7 @@ public class CafeaMacinata extends Cafea {
     private String tipulDeAparat; //tipul de aparat de preparat cafea (manual, automat)
 
     //constructor fara parametrii 
-    public CafeaMacinata(){
+    public CafeaMacinata(int tipulDeMacinare2, String tipulDeAparat2){
         super(); //apelam constructorul fara parametrii din clasa parinte (Cafea) 
         tipulDeMacinare="necunoscut"; 
         tipulDeAparat="necunoscut"; 

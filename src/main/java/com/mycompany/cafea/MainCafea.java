@@ -26,7 +26,7 @@ public class MainCafea {
         {
                 System.out.println("Zanfir Liliana Petruta"); //afisam numele
                 CafeaMacinata cafeamacinata []= new CafeaMacinata[10]; //cream un vector de 10 elemente de tip CafeaMacinata
-                cafeamacinata[0]=new CafeaMacinata(); //cream un obiect de tip CafeaMacinata cu constructorul implicit 
+                cafeamacinata[0]=new CafeaMacinata(0, null); //cream un obiect de tip CafeaMacinata cu constructorul implicit 
                 cafeamacinata[1]=new CafeaMacinata("Nescafe", "intens", "filtre", 
                 "slaba", "slaba", "medie", "cappucino", "scazuta", 
                 "medie", "spalare umeda", "fin", 
