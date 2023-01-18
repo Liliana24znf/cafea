@@ -12,7 +12,7 @@ public class TestInterfata {
         JFrame frame = new JFrame();
 
 		JLabel nr = new JLabel("Cafea macinata:");
-		nr.setBounds(20, 20, 80, 20);
+		nr.setBounds(20, 20, 100, 20);
 		JTextField nrTF = new JTextField();
 		nrTF.setBounds(120, 20, 100, 20);
 		JButton genereazaBT = new JButton("Genereaza date");
@@ -21,7 +21,7 @@ public class TestInterfata {
 
 
         JLabel tipulDeMacinare = new JLabel("Tipul de macinare:");
-        tipulDeMacinare.setBounds(20, 100, 80, 20);
+        tipulDeMacinare.setBounds(20, 100, 120, 20);
         JTextField tipulDeMacinareTF = new JTextField();
         tipulDeMacinareTF.setBounds(120, 100, 100, 20);
         JButton tipulDeMacinareBT = new JButton("Filtreaza dupa tipul de macinare ");
@@ -29,7 +29,7 @@ public class TestInterfata {
         tipulDeMacinareBT.addActionListener(new ActionListnerGenerareDate(tipulDeMacinareTF));
 
         JLabel tipulDeAparat = new JLabel("Tipul de aparat:");
-        tipulDeAparat.setBounds(20, 180, 80, 20);
+        tipulDeAparat.setBounds(20, 180, 100, 20);
         JTextField tipulDeAparatTF = new JTextField();
         tipulDeAparatTF.setBounds(120, 180, 100, 20);
         JButton tipulDeAparatBT = new JButton("Filtreaza dupa tipul de aparat ");

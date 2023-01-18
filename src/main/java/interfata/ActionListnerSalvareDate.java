@@ -13,9 +13,9 @@ public class ActionListnerSalvareDate implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent ev) {
-       
-        //de modificat path-ul
 
+        /*String path="C:\\Users\\LILIANA-PC";
+        String namefile="date.txt";*/
 
 
         try {

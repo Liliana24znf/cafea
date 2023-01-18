@@ -68,7 +68,7 @@ public class CafeaMacinata extends Cafea {
     //metoda toString pentru afisarea informatiilor despre cafea macinata
     @Override // suprascriem metoda toString din clasa parinte (Cafea)  
     public String toString(){
-    return super.toString()+"\nTipul de macinare: "+tipulDeMacinare+"\nTipul de aparat: "+tipulDeAparat +"\n";
+    return super.toString()+"Tipul de macinare: "+tipulDeMacinare+"Tipul de aparat: "+tipulDeAparat;
 }
 
 }
