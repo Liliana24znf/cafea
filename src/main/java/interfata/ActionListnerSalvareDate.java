@@ -13,10 +13,10 @@ public class ActionListnerSalvareDate implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent ev) {
-        
-        /*String path="C:\\Users\\alupo\\Desktop\\fisiere";
-        String namefile="date.txt"; */
+       
         //de modificat path-ul
+
+
 
         try {
             //Salvam datele ca text
