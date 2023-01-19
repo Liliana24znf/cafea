@@ -64,6 +64,6 @@ public class TestInterfata {
     }
 
     public static void main(String[] args) {
-       TestInterfata t = new TestInterfata();
+      TestInterfata t =  new TestInterfata();
     }
 }

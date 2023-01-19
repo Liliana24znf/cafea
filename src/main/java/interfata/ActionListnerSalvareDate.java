@@ -30,7 +30,7 @@ public class ActionListnerSalvareDate implements ActionListener{
             System.out.println(TestInterfata.listaCafeaMacinata);
             
             
-            // Salvam datele in mod binar, ca obiecte
+           /*  // Salvam datele in mod binar, ca obiecte
             FileOutputStream f = new FileOutputStream(new File("myObjects.txt"));
             ObjectOutputStream o = new ObjectOutputStream(f);
             // se salveaza intrega colectie
@@ -40,6 +40,7 @@ public class ActionListnerSalvareDate implements ActionListener{
             	o.writeObject(cafea);
             o.close();
             f.close();
+            */
             
             System.out.println("Date salvate");
 
