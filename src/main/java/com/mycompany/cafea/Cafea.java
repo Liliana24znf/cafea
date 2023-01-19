@@ -146,7 +146,7 @@ public class Cafea {
 
     //metodele interfetei Bauturi 
     public void preparare(){
-        System.out.println("Cafeaua se prepara prin metoda de extractie ");
+        System.out.println("Cafeaua se prepara prin metoda de extractie: ");
     }
 
     public void servire(){
