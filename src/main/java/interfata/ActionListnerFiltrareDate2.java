@@ -16,7 +16,7 @@ public class ActionListnerFiltrareDate2 implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        TestInterfata.listaCafeaMacinata = FilterCafeaMacinata.filtreazaDupatipulDeMacinare(TestInterfata.listaCafeaMacinata, Integer.parseInt(jtext.getText()));
+        TestInterfata.listaCafeaMacinata = FilterCafeaMacinata.filtreazaDupatipulDeMacinare(TestInterfata.listaCafeaMacinata, jtext.getText());
         System.out.println("Date filtrate:");
         System.out.println(TestInterfata.listaCafeaMacinata);
     }

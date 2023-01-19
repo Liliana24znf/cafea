@@ -14,13 +14,13 @@ public class ActionListnerSalvareDate implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent ev) {
 
-        /*String path="C:\\Users\\LILIANA-PC";
-        String namefile="date.txt";*/
+        //String path="C:\\Users\\LILIANA-PC";
+        String namefile="date.txt";
 
 
         try {
             //Salvam datele ca text
-            FileWriter myWriter = new FileWriter("date.txt");
+            FileWriter myWriter = new FileWriter(namefile);
             // se salveaza intrega colectie
             myWriter.write(TestInterfata.listaCafeaMacinata.toString());
             // se salveaza cate un element din colectie pe rand
