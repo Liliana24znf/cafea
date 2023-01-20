@@ -1,11 +1,11 @@
-[Brandul cafelei este: Nescafe Nivelul de prajire al cafelei este: usor Metoda de extractie a cafelei este: filtre
-Intensitatea cafelei este: mediu Densitatea cafelei este: mediu Culoarea cafelei este: slaba 
-Prepararea cafelei este: espresso Aciditatea cafelei este: mediu Corpolenta cafelei este: solida
-Modul de procesare al cafelei este: amandoua 
-Tipul de macinare: gros Tipul de aparat: manual 
-]Brandul cafelei este: Nescafe Nivelul de prajire al cafelei este: usor Metoda de extractie a cafelei este: filtre
-Intensitatea cafelei este: mediu Densitatea cafelei este: mediu Culoarea cafelei este: slaba 
-Prepararea cafelei este: espresso Aciditatea cafelei este: mediu Corpolenta cafelei este: solida
-Modul de procesare al cafelei este: amandoua 
-Tipul de macinare: gros Tipul de aparat: manual 
+[Brandul cafelei este: Jacobs Nivelul de prajire al cafelei este: mediu Metoda de extractie a cafelei este: solubil
+Intensitatea cafelei este: puternica Densitatea cafelei este: puternica Culoarea cafelei este: slaba 
+Prepararea cafelei este: cappuccino Aciditatea cafelei este: crescuta Corpolenta cafelei este: medie
+Modul de procesare al cafelei este: semispalare 
+Tipul de macinare: fin Tipul de aparat: manual 
+]Brandul cafelei este: Jacobs Nivelul de prajire al cafelei este: mediu Metoda de extractie a cafelei este: solubil
+Intensitatea cafelei este: puternica Densitatea cafelei este: puternica Culoarea cafelei este: slaba 
+Prepararea cafelei este: cappuccino Aciditatea cafelei este: crescuta Corpolenta cafelei este: medie
+Modul de procesare al cafelei este: semispalare 
+Tipul de macinare: fin Tipul de aparat: manual 
 
