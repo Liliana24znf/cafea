@@ -15,7 +15,7 @@ public class App
         System.out.println("\n");
         
         System.out.println("Constructorul cu parametrii");
-        Cafea c2=new Cafea("Nescafe, ", "mediu, ", "filtre, ", "medie, ", "medie, ", "maro, ", "espresso, ", "amedie, ", "medie, ", " spalare umeda.");
+        Cafea c2=new Cafea("Nescafe, ", "mediu, ", "filtre, ", "medie,", "medie, ", "maro,", "espresso, ", "medie,", "medie, ", " spalare umeda.");
         System.out.println(c2);
         c2.preparare();
         c2.servire();

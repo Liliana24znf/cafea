@@ -2,10 +2,7 @@ package interfata;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.FileWriter;
-import java.io.ObjectOutputStream;
 
 import com.mycompany.cafea.CafeaMacinata;
 
@@ -41,7 +38,7 @@ public class ActionListnerSalvareDate implements ActionListener{
             o.close();
             f.close();
             */
-            
+
             System.out.println("Date salvate");
 
         } catch (Exception e) {

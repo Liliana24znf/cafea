@@ -10,39 +10,62 @@ public class TestInterfata {
 
     TestInterfata(){
         JFrame frame = new JFrame();
-
-		JLabel nr = new JLabel("Cafea macinata:");
-		nr.setBounds(20, 20, 100, 20);
-		JTextField nrTF = new JTextField();
-		nrTF.setBounds(120, 20, 100, 20);
-		JButton genereazaBT = new JButton("Genereaza date");
-		genereazaBT.setBounds(20, 50, 200, 30);
-		genereazaBT.addActionListener(new ActionListnerGenerareDate(nrTF));
-
-
-        JLabel tipulDeMacinare = new JLabel("Tipul de macinare:");
-        tipulDeMacinare.setBounds(20, 100, 120, 20);
-        JTextField tipulDeMacinareTF = new JTextField();
-        tipulDeMacinareTF.setBounds(120, 100, 100, 20);
-        JButton tipulDeMacinareBT = new JButton("Filtreaza dupa tipul de macinare ");
-        tipulDeMacinareBT.setBounds(20, 130, 200, 30);
-        tipulDeMacinareBT.addActionListener(new ActionListnerGenerareDate(tipulDeMacinareTF));
-
-        JLabel tipulDeAparat = new JLabel("Tipul de aparat:");
-        tipulDeAparat.setBounds(20, 180, 100, 20);
-        JTextField tipulDeAparatTF = new JTextField();
-        tipulDeAparatTF.setBounds(120, 180, 100, 20);
-        JButton tipulDeAparatBT = new JButton("Filtreaza dupa tipul de aparat ");
-        tipulDeAparatBT.setBounds(20, 210, 200, 30);
-        tipulDeAparatBT.addActionListener(new ActionListnerGenerareDate(tipulDeAparatTF));
+        //culoarea interfetei  - galbena 
+        frame.getContentPane().setBackground(new java.awt.Color(255, 255, 0));
+      
+       
+		JLabel nr = new JLabel("Cafea macinata:"); // eticheta
+		nr.setBounds(20, 20, 150, 20); // pozitia etichetei
+		JTextField nrTF = new JTextField(); // campul de text
+		nrTF.setBounds(120, 20, 100, 20); // pozitia campului de text
+		JButton genereazaBT = new JButton("Genereaza date"); // butonul
+		genereazaBT.setBounds(20, 50, 300, 30); // pozitia butonului 
+		genereazaBT.addActionListener(new ActionListnerGenerareDate(nrTF)); // adaugarea actiunii butonului
+        genereazaBT.setBackground(new java.awt.Color(0, 255, 0)); // culoarea butonului
+        genereazaBT.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului butonului
+        genereazaBT.setFont(new java.awt.Font("Tahoma", 1, 15)); // fontul textului butonului
+        nr.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului etichetei
+        nr.setFont(new java.awt.Font("Tahoma", 1, 12)); // fontul textului etichetei 
         
 
-        JButton afiseazaButton = new JButton("Salveaza");
-        afiseazaButton.setBounds(20, 270, 200, 30);
-        afiseazaButton.addActionListener(new ActionListnerSalvareDate());
-           
+        JLabel tipulDeMacinare = new JLabel("Tipul de macinare:"); // eticheta
+        tipulDeMacinare.setBounds(20, 100, 130, 20); // pozitia etichetei
+        JTextField tipulDeMacinareTF = new JTextField(); // campul de text
+        tipulDeMacinareTF.setBounds(140, 100, 100, 20); // pozitia campului de text
+        JButton tipulDeMacinareBT = new JButton("Filtreaza dupa tipul de macinare "); // butonul
+        tipulDeMacinareBT.setBounds(20, 130, 300, 30); // pozitia butonului
+        tipulDeMacinareBT.addActionListener(new ActionListnerGenerareDate(tipulDeMacinareTF)); // adaugarea actiunii butonului  
+        tipulDeMacinare.setForeground(new java.awt.Color(0, 0, 255));   // culoarea textului etichetei
+        tipulDeMacinare.setFont(new java.awt.Font("Tahoma", 1, 12));    // fontul textului etichetei
+        tipulDeMacinareBT.setBackground(new java.awt.Color(0, 255, 0)); // culoarea butonului
+        tipulDeMacinareBT.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului butonului
+        tipulDeMacinareBT.setFont(new java.awt.Font("Tahoma", 1, 15));  // fontul textului butonului
 
-        frame.add(nr);
+
+
+        JLabel tipulDeAparat = new JLabel("Tipul de aparat:");  // eticheta
+        tipulDeAparat.setBounds(20, 180, 100, 20);  // pozitia etichetei
+        JTextField tipulDeAparatTF = new JTextField();  // campul de text
+        tipulDeAparatTF.setBounds(120, 180, 100, 20); // pozitia campului de text
+        JButton tipulDeAparatBT = new JButton("Filtreaza dupa tipul de aparat "); // butonul
+        tipulDeAparatBT.setBounds(20, 210, 300, 30);    // pozitia butonului
+        tipulDeAparatBT.addActionListener(new ActionListnerGenerareDate(tipulDeAparatTF));  // adaugarea actiunii butonului
+        tipulDeAparat.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului etichetei
+        tipulDeAparat.setFont(new java.awt.Font("Tahoma", 1, 12));  // fontul textului etichetei
+        tipulDeAparatBT.setBackground(new java.awt.Color(0, 255, 0));   // culoarea butonului
+        tipulDeAparatBT.setForeground(new java.awt.Color(0, 0, 255));   // culoarea textului butonului
+        tipulDeAparatBT.setFont(new java.awt.Font("Tahoma", 1, 15));    // fontul textului butonului
+        
+
+        JButton afiseazaButton = new JButton("Salveaza");   // butonul
+        afiseazaButton.setBounds(20, 270, 200, 30); // pozitia butonului
+        afiseazaButton.addActionListener(new ActionListnerSalvareDate()); // adaugarea actiunii butonului
+        afiseazaButton.setBackground(new java.awt.Color(0, 255, 0));    // culoarea butonului
+        afiseazaButton.setForeground(new java.awt.Color(0, 0, 255));    // culoarea textului butonului
+        afiseazaButton.setFont(new java.awt.Font("Tahoma", 1, 15));    // fontul textului butonului
+
+
+        frame.add(nr); 
         frame.add(nrTF);
         frame.add(genereazaBT);
 
@@ -56,11 +79,13 @@ public class TestInterfata {
         frame.add(tipulDeAparatBT);
         frame.add(afiseazaButton);
 
-        frame.setSize(400, 400);
+        frame.setSize(500, 400); // dimensiunea ferestrei
         frame.setTitle("Cafea Macinata");
-        frame.setLayout(null);
+        frame.setLayout(null);   
         frame.setVisible(true);
         frame.setResizable(false);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // inchiderea ferestrei
+
     }
 
     public static void main(String[] args) {
