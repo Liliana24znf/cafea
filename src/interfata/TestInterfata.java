@@ -14,7 +14,6 @@ public class TestInterfata {
     {
         JFrame frame = new JFrame();
         
-        
         JLabel nr = new JLabel ("Nr. CafeaCapsule:");
         nr.setBounds(20, 20, 80, 20);
         JTextField nrTF= new JTextField();

@@ -1,20 +1,20 @@
 package com.mycompany.cafea;
 
 public class CafeaMacinata extends Cafea {
-     private String tipulDeMacinare; //tipul de macinare al cafelei (fin, mediu, gros) 
+    private String tipulDeMacinare; //tipul de macinare al cafelei (fin, mediu, gros) 
     private String tipulDeAparat; //tipul de aparat de preparat cafea (manual, automat)
 
     //constructor fara parametrii 
-    public CafeaMacinata(){
+    public CafeaMacinata(int tipulDeMacinare2, String tipulDeAparat2){
         super(); //apelam constructorul fara parametrii din clasa parinte (Cafea) 
         tipulDeMacinare="necunoscut"; 
         tipulDeAparat="necunoscut"; 
     }
 
     //constructor cu parametrii 
-    public CafeaMacinata(String brand, String nivelulDeprajire, String metodaDeextractie, String intensitate, 
-    String densitate, String culoare, String preparare, String aciditatea, String corpolenta, String modulDeprocesare, 
-    String tipulDeMacinare, String tipulDeAparat){ 
+    public CafeaMacinata(String tipulDeMacinare, String tipulDeAparat, String brand , String nivelulDeprajire, String metodaDeextractie, String intensitate, 
+    String densitate, String culoare, String preparare, String aciditatea, String corpolenta, String modulDeprocesare 
+    ){ 
          //apelam constructorul din clasa parinte (Cafea) cu parametrii pentru a initializa variabilele din 
          //clasa parinte (Cafea) cu valorile primite ca parametrii in constructorul din clasa copil (CafeaMacinata)   
         super(brand, nivelulDeprajire, metodaDeextractie, intensitate, densitate, culoare, preparare, aciditatea,  corpolenta, modulDeprocesare); 
@@ -28,6 +28,9 @@ public class CafeaMacinata extends Cafea {
         this.tipulDeMacinare=cm.tipulDeMacinare;
         this.tipulDeAparat=cm.tipulDeAparat; 
     } 
+
+    public CafeaMacinata(String string, String tipulDeAparat2) {
+    }
 
     //metode getteri si setteri pentru toate variabilele private
     public String getTipulDeMacinare(){
@@ -65,7 +68,7 @@ public class CafeaMacinata extends Cafea {
     //metoda toString pentru afisarea informatiilor despre cafea macinata
     @Override // suprascriem metoda toString din clasa parinte (Cafea)  
     public String toString(){
-    return super.toString()+"\nTipul de macinare: "+tipulDeMacinare+"\nTipul de aparat: "+tipulDeAparat;
-
+    return super.toString()+"\nTipul de macinare: "+tipulDeMacinare+" "+"Tipul de aparat: "+tipulDeAparat+" \n";
 }
+
 }

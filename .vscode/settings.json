@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.configuration.updateBuildConfiguration": "interactive"
+}
+=======
     "java.project.sourcePaths": ["src"],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
     ]
 }
+>>>>>>> 3aa77198ceec34b5664fa565c6062916d5235330

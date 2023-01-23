@@ -138,10 +138,10 @@ public class Cafea {
 
     //metoda toString
     public String toString(){
-        return "Brandul cafelei este: "+brand+"Nivelul de prajire al cafelei este: "+nivelulDeprajire+" "
-                + "Metoda de extractie a cafelei este: "+metodaDeextractie+"Intensitatea cafelei este: "+intensitate+" "
-                + "Densitatea cafelei este: "+densitate+"Culoarea cafelei este: "+culoare+"Prepararea cafelei este: "+preparare+" "
-                + "Aciditatea cafelei este: "+aciditatea+"Corpolenta cafelei este: "+corpolenta+"Modul de procesare al cafelei este: "+modulDeprocesare;
+        return "Brandul cafelei este: "+brand+" Nivelul de prajire al cafelei este: "+nivelulDeprajire+" "
+                + "Metoda de extractie a cafelei este: "+metodaDeextractie+"\nIntensitatea cafelei este: "+intensitate+" "
+                + "Densitatea cafelei este: "+densitate+" " +"Culoarea cafelei este: "+culoare+" "+"\nPrepararea cafelei este: "+preparare+" "
+                + "Aciditatea cafelei este: "+aciditatea+" "+"Corpolenta cafelei este: "+corpolenta+"\nModul de procesare al cafelei este: "+modulDeprocesare+" ";
     }
 
     //metodele interfetei Bauturi 
@@ -157,4 +157,5 @@ public class Cafea {
         System.out.println("Cafeaua se degusta in functie de brand, nivelul de prajire, metoda de extractie,  "
                 + "intensitate, densitate, culoare, preparare, aciditate, corpolenta si modul de procesare");
     }
+    
 }
