@@ -1,7 +1,7 @@
 package com.mycompany.cafea;
 
 public class CafeaMacinata extends Cafea {
-     private String tipulDeMacinare; //tipul de macinare al cafelei (fin, mediu, gros) 
+    private String tipulDeMacinare; //tipul de macinare al cafelei (fin, mediu, gros) 
     private String tipulDeAparat; //tipul de aparat de preparat cafea (manual, automat)
 
     //constructor fara parametrii 

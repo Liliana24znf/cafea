@@ -12,21 +12,33 @@ public class TestInterfata {
         JFrame frame = new JFrame();
         //culoarea interfetei  - galbena 
         frame.getContentPane().setBackground(new java.awt.Color(255, 255, 0));
-      
+
+    
+        //creearea unui textarea
+        JTextArea textArea = new JTextArea();
+        textArea.setBounds(500, 20, 350, 350);
+        textArea.setBackground(new java.awt.Color(255, 255, 255));
+        textArea.setForeground(new java.awt.Color(0, 0, 0));
+        textArea.setFont(new java.awt.Font("Tahoma", 1, 12));
+        textArea.setEditable(false);
+        frame.add(textArea);   
+        
+
        
 		JLabel nr = new JLabel("Cafea macinata:"); // eticheta
 		nr.setBounds(20, 20, 150, 20); // pozitia etichetei
 		JTextField nrTF = new JTextField(); // campul de text
 		nrTF.setBounds(120, 20, 100, 20); // pozitia campului de text
+        nr.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului etichetei
+        nr.setFont(new java.awt.Font("Tahoma", 1, 12)); // fontul textului etichetei 
 		JButton genereazaBT = new JButton("Genereaza date"); // butonul
 		genereazaBT.setBounds(20, 50, 300, 30); // pozitia butonului 
 		genereazaBT.addActionListener(new ActionListnerGenerareDate(nrTF)); // adaugarea actiunii butonului
         genereazaBT.setBackground(new java.awt.Color(0, 255, 0)); // culoarea butonului
         genereazaBT.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului butonului
         genereazaBT.setFont(new java.awt.Font("Tahoma", 1, 15)); // fontul textului butonului
-        nr.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului etichetei
-        nr.setFont(new java.awt.Font("Tahoma", 1, 12)); // fontul textului etichetei 
         
+
 
         JLabel tipulDeMacinare = new JLabel("Tipul de macinare:"); // eticheta
         tipulDeMacinare.setBounds(20, 100, 130, 20); // pozitia etichetei
@@ -79,16 +91,18 @@ public class TestInterfata {
         frame.add(tipulDeAparatBT);
         frame.add(afiseazaButton);
 
-        frame.setSize(500, 400); // dimensiunea ferestrei
+
+        frame.setSize(1000, 500); // dimensiunea ferestrei
         frame.setTitle("Cafea Macinata");
         frame.setLayout(null);   
         frame.setVisible(true);
         frame.setResizable(false);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // inchiderea ferestrei
-
+        
     }
 
     public static void main(String[] args) {
       TestInterfata t =  new TestInterfata();
     }
 }
+//in interfata incarc un butpon fisier si sa mi se duca in proiect sa se afiseze in interfata
