@@ -1,0 +1,3 @@
+[CafeaCapsule{brand=Lavazza, nivelulDeprajire=mediu , metodaDeextractie=uscata, intensitate=mare, densitate=scazuta, culoare=negru, preparare=manuala, aciditatea=mare, corpolenta=scazuta, modulDeprocesare=umeda, tipulDeCapsule=nespreso, cofeina=da
+]CafeaCapsule{brand=Lavazza, nivelulDeprajire=mediu , metodaDeextractie=uscata, intensitate=mare, densitate=scazuta, culoare=negru, preparare=manuala, aciditatea=mare, corpolenta=scazuta, modulDeprocesare=umeda, tipulDeCapsule=nespreso, cofeina=da
+
