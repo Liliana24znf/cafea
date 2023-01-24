@@ -1,3 +1,5 @@
+package cafea;
+
 public class Cafea {
     // declararea variabilelor, campuri comune, date membre private  
     private String brand; //brandul cafelei 
