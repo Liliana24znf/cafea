@@ -4,39 +4,13 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        {
-            "type": "java",
-            "name": "Launch Testinterfatacomuna",
-            "request": "launch",
-            "mainClass": "interfata.Testinterfatacomuna",
-            "projectName": "cafea"
-        },
+      
         {
             "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
         },
-        {
-            "type": "java",
-            "name": "Launch App",
-            "request": "launch",
-            "mainClass": "com.mycompany.cafea.App",
-            "projectName": "cafea"
-        },
-        {
-            "type": "java",
-            "name": "Launch testtema3",
-            "request": "launch",
-            "mainClass": "datagenerator.testtema3",
-            "projectName": "cafea"
-        },
-        {
-            "type": "java",
-            "name": "Launch TestInterfata",
-            "request": "launch",
-            "mainClass": "interfata.TestInterfata",
-            "projectName": "cafea"
-        }
+       
     ]
 }
