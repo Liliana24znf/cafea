@@ -1,10 +1,10 @@
-package interfata;
+package Interfata;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JTextField;
-import filter.FilterCafeaMacinata;
+import Filter.FilterCafeaMacinata;
 
 public class ActionListnerFiltrareDate implements ActionListener {
 

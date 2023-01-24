@@ -1,6 +1,6 @@
-package model;
+package cafea;
 
-public class TestCafea {
+public class TestareCafeaCapsule {
 
     /**
      * @param args

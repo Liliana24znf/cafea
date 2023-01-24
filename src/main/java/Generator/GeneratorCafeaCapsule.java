@@ -1,8 +1,8 @@
-package dataGenerator;
+package Generator;
 
 import java.util.ArrayList;
 import java.util.Random;
-import model.CafeaCapsule;
+import cafea.CafeaCapsule;
 
 public class GeneratorCafeaCapsule {
     public static String tara="Romania";

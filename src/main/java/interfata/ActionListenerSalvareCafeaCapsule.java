@@ -1,4 +1,4 @@
-package interfata;
+package Interfata;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -9,10 +9,10 @@ import java.io.FileWriter;
 
 import java.io.ObjectOutputStream;
 
-import model.CafeaCapsule;
+import cafea.CafeaCapsule;
 
 
-public class ActionListenerSalvare implements ActionListener{
+public class ActionListenerSalvareCafeaCapsule implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent ev)
     {
@@ -23,20 +23,20 @@ public class ActionListenerSalvare implements ActionListener{
             // salvam datele ca txt
             FileWriter myWriter = new FileWriter(namefile);//aici sa modifice
             // se salveaza intreaga colectie
-            myWriter.write(TestInterfata.listaCafeaCapsuleFiltrata.toString());
+            myWriter.write(TestInterfataCafeaCapsule.listaCafeaCapsuleFiltrata.toString());
             // se salveaza cate un element din colectie pe rand
-            for(CafeaCapsule cafeaCapsule:TestInterfata.listaCafeaCapsuleFiltrata)
+            for(CafeaCapsule cafeaCapsule:TestInterfataCafeaCapsule.listaCafeaCapsuleFiltrata)
                 myWriter.write(cafeaCapsule.toString()+"\n");
             myWriter.close();
-            System.out.println(TestInterfata.listaCafeaCapsuleFiltrata); 
+            System.out.println(TestInterfataCafeaCapsule.listaCafeaCapsuleFiltrata); 
         
         // salvam datele in mod binar ca obiecte
         FileOutputStream f= new FileOutputStream(new File("myObject.txt"));
         ObjectOutputStream o = new ObjectOutputStream(f);
         // se salveaza intreaga colectie
-        o.writeObject(TestInterfata.listaCafeaCapsuleFiltrata);
+        o.writeObject(TestInterfataCafeaCapsule.listaCafeaCapsuleFiltrata);
         // se salveaza cate un element din colectie pe rand
-        for(CafeaCapsule cafeaCapsule:TestInterfata.listaCafeaCapsuleFiltrata)
+        for(CafeaCapsule cafeaCapsule:TestInterfataCafeaCapsule.listaCafeaCapsuleFiltrata)
             o.writeObject(cafeaCapsule);
         o.close();
         f.close();

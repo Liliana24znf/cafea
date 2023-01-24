@@ -1,11 +1,11 @@
-package interfata;
+package Interfata;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JTextField;
 
-import datagenerator.GeneratorCafeaMacinata;
+import Generator.GeneratorCafeaMacinata;
 
 public class ActionListnerGenerareDate implements ActionListener{
 

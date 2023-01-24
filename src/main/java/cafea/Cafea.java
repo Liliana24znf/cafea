@@ -1,4 +1,4 @@
-package model;
+package cafea;
 
 public class Cafea {
     // declararea variabilelor, campuri comune, date membre private  

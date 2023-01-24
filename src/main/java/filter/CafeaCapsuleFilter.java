@@ -1,7 +1,7 @@
-package filter;
+package Filter;
 
 import java.util.ArrayList;
-import model.CafeaCapsule;
+import cafea.CafeaCapsule;
 
 
 public class CafeaCapsuleFilter {

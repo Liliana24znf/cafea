@@ -6,9 +6,30 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch Testinterfatacomuna",
+            "name": "Launch TestInterfataCafeaCapsule",
             "request": "launch",
-            "mainClass": "interfata.Testinterfatacomuna",
+            "mainClass": "Interfata.TestInterfataCafeaCapsule",
+            "projectName": "cafea"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestInterfata",
+            "request": "launch",
+            "mainClass": "Interfata.TestInterfata",
+            "projectName": "cafea"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestareCafeaCapsule",
+            "request": "launch",
+            "mainClass": "cafea.TestareCafeaCapsule",
+            "projectName": "cafea"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestareCafeaMacinata",
+            "request": "launch",
+            "mainClass": "cafea.TestareCafeaMacinata",
             "projectName": "cafea"
         },
         {
@@ -16,27 +37,6 @@
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "Launch App",
-            "request": "launch",
-            "mainClass": "com.mycompany.cafea.App",
-            "projectName": "cafea"
-        },
-        {
-            "type": "java",
-            "name": "Launch testtema3",
-            "request": "launch",
-            "mainClass": "datagenerator.testtema3",
-            "projectName": "cafea"
-        },
-        {
-            "type": "java",
-            "name": "Launch TestInterfata",
-            "request": "launch",
-            "mainClass": "interfata.TestInterfata",
-            "projectName": "cafea"
         }
     ]
 }

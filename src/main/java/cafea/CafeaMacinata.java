@@ -1,4 +1,4 @@
-package com.mycompany.cafea;
+package cafea;
 
 public class CafeaMacinata extends Cafea {
     private String tipulDeMacinare; //tipul de macinare al cafelei (fin, mediu, gros) 

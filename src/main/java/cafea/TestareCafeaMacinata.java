@@ -1,6 +1,6 @@
-package com.mycompany.cafea;
+package cafea;
 
-public class App 
+public class TestareCafeaMacinata
 {
    
 

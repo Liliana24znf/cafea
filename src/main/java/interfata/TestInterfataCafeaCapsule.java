@@ -1,18 +1,19 @@
-package interfata;
+package Interfata;
 import java.util.ArrayList;
 import javax.swing.*;
 
-import model.CafeaCapsule;
+import cafea.CafeaCapsule;
 
 
-public class TestInterfata {
+public class TestInterfataCafeaCapsule {
 
     public static ArrayList<CafeaCapsule> listaCafeaCapsule;
     public static ArrayList<CafeaCapsule> listaCafeaCapsuleFiltrata; 
 
-    TestInterfata()
+    TestInterfataCafeaCapsule()
     {
         JFrame frame = new JFrame();
+        
         
         JLabel nr = new JLabel ("Nr. CafeaCapsule:");
         nr.setBounds(20, 20, 80, 20);
@@ -20,7 +21,7 @@ public class TestInterfata {
         nrTF.setBounds(120, 20, 80, 20);
         JButton genereazaBT = new JButton("Genereaza date");
         genereazaBT.setBounds(20,50,200,30);
-        genereazaBT.addActionListener(new ActionListnerGenerareDate(nrTF)); 
+        genereazaBT.addActionListener(new ActionListnerGenerareDateCafeaCapsule(nrTF)); 
         //se asteapta primirea unei actiuni de la butonul de generare date si se apeleaza metoda din clasa ActionListnerGenerareDate
         
         
@@ -31,7 +32,7 @@ public class TestInterfata {
         nr2TF.setBounds(120,100,80,20);
         JButton filtreazaBT= new JButton("Filtreaza dupa Brand");
         filtreazaBT.setBounds(20,130,200,30);
-        filtreazaBT.addActionListener(new ActionListenerFiltrare(nr2TF)); 
+        filtreazaBT.addActionListener(new ActionListenerFiltrareCafeaCapsule(nr2TF)); 
         
         
         
@@ -42,12 +43,12 @@ public class TestInterfata {
         nr3TF.setBounds(120,180,80,20);
         JButton filtreaza2BT= new JButton("Filtreaza dupa cofeina");
         filtreaza2BT.setBounds(20,210,200,30);
-        filtreaza2BT.addActionListener(new ActionListenerFiltrare2(nr3TF));
+        filtreaza2BT.addActionListener(new ActionListenerFiltrareCafeaCapsule2(nr3TF));
         
         
         JButton afiseazaBT= new JButton("Importa");
         afiseazaBT.setBounds(20,270,200,30);
-        afiseazaBT.addActionListener(new ActionListenerSalvare());
+        afiseazaBT.addActionListener(new ActionListenerSalvareCafeaCapsule());
         
         
         frame.add(nr);
@@ -77,7 +78,7 @@ public class TestInterfata {
         
         public static void main(String[] args) {
         
-            TestInterfata t = new TestInterfata(); ///aici sa modifice
+            TestInterfataCafeaCapsule t = new TestInterfataCafeaCapsule(); ///aici sa modifice
     }
     
 }

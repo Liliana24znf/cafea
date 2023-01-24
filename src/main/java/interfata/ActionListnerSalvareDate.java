@@ -1,10 +1,10 @@
-package interfata;
+package Interfata;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileWriter;
 
-import com.mycompany.cafea.CafeaMacinata;
+import cafea.CafeaMacinata;
 
 public class ActionListnerSalvareDate implements ActionListener{
 

@@ -1,7 +1,7 @@
-package interfata;
+package Interfata;
 import java.util.ArrayList;
 import javax.swing.*;
-import com.mycompany.cafea.CafeaMacinata;
+import cafea.CafeaMacinata;
 
 public class TestInterfata {
 

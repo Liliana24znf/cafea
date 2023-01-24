@@ -1,9 +1,9 @@
-package datagenerator;
+package Generator;
 
 import java.util.ArrayList;
 import java.util.Random;
 
-import com.mycompany.cafea.CafeaMacinata;
+import cafea.CafeaMacinata;
 
 
 public class GeneratorCafeaMacinata {

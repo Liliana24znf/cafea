@@ -4,10 +4,8 @@
     "\\src",
     "\\src\\main",
     "\\src\\main\\java",
-    "\\src\\main\\java\\com",
-    "\\src\\main\\java\\com\\mycompany",
-    "\\src\\main\\java\\com\\mycompany\\cafea"
+    "\\src\\main\\java\\cafea"
   ],
-  "SelectedNode": "\\src\\main\\java\\com\\mycompany\\cafea",
+  "SelectedNode": "\\src\\main\\java\\cafea",
   "PreviewInSolutionExplorer": false
 }

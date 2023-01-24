@@ -1,4 +1,4 @@
-package com.mycompany.cafea;
+package cafea;
 
 public interface Bauturi {
     public void preparare(); //metoda abstracta pentru prepararea bauturii 

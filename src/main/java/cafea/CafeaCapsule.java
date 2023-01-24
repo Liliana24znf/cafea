@@ -1,8 +1,7 @@
-
-package com.mycompany.cafea;
+package cafea;
 
 public class CafeaCapsule extends Cafea{
-    
+   
     private String tipulDeCapsule; //tipul de capsule de cafea (nespreso, espresso, lungo, ristretto, cappuccino, latte, etc.)
     private String cofeina; //  cafeina (da, nu)
 
@@ -14,7 +13,10 @@ public class CafeaCapsule extends Cafea{
     }
 
     //constructor cu parametrii
-    public CafeaCapsule(String brand, String nivelulDeprajire, String metodaDeextractie, String intensitate, String densitate, String culoare, String preparare, String aciditatea, String corpolenta, String modulDeprocesare, String tipulDeCapsule, String cofeina){
+    public CafeaCapsule(String brand, String nivelulDeprajire, String metodaDeextractie,
+     String intensitate, String densitate, String culoare, String preparare, String aciditatea,
+      String corpolenta, String modulDeprocesare, String tipulDeCapsule, String cofeina)
+      {
         super(brand, nivelulDeprajire, metodaDeextractie, intensitate, densitate, culoare, preparare, aciditatea, corpolenta, modulDeprocesare);
         this.tipulDeCapsule=tipulDeCapsule;
         this.cofeina=cofeina;
@@ -69,7 +71,8 @@ public class CafeaCapsule extends Cafea{
                 + ", metodaDeextractie=" + getMetodaDeextractie() + ", intensitate=" + getIntensitate() + ", "
                 + "densitate=" + getDensitate() + ", culoare=" + getCuloare() + ", preparare=" + getPreparare() + ", "
                 + "aciditatea=" + getAciditatea() + ", corpolenta=" + getCorpolenta() + ", modulDeprocesare=" + 
-                getModulDeprocesare() + ", tipulDeCapsule=" + tipulDeCapsule + ", cofeina=" + cofeina + '}';
+                getModulDeprocesare() + ", tipulDeCapsule=" + tipulDeCapsule + ", cofeina=" + cofeina + "\n";
         
     }
 }
+
