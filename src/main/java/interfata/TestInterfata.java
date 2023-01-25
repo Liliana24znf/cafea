@@ -13,18 +13,7 @@ public class TestInterfata {
         //culoarea interfetei  - galbena 
         frame.getContentPane().setBackground(new java.awt.Color(255, 255, 0));
 
-    
-        //creearea unui textarea
-        JTextArea textArea = new JTextArea();
-        textArea.setBounds(500, 20, 350, 350);
-        textArea.setBackground(new java.awt.Color(255, 255, 255));
-        textArea.setForeground(new java.awt.Color(0, 0, 0));
-        textArea.setFont(new java.awt.Font("Tahoma", 1, 12));
-        textArea.setEditable(false);
-        frame.add(textArea);   
-        
-
-       
+   
 		JLabel nr = new JLabel("Cafea macinata:"); // eticheta
 		nr.setBounds(20, 20, 150, 20); // pozitia etichetei
 		JTextField nrTF = new JTextField(); // campul de text
@@ -92,7 +81,7 @@ public class TestInterfata {
         frame.add(afiseazaButton);
 
 
-        frame.setSize(1000, 500); // dimensiunea ferestrei
+        frame.setSize(400, 400); // dimensiunea ferestrei
         frame.setTitle("Cafea Macinata");
         frame.setLayout(null);   
         frame.setVisible(true);
@@ -105,4 +94,3 @@ public class TestInterfata {
       TestInterfata t =  new TestInterfata();
     }
 }
-//in interfata incarc un butpon fisier si sa mi se duca in proiect sa se afiseze in interfata
