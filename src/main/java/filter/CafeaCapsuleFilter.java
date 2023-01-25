@@ -23,7 +23,7 @@ public static ArrayList<CafeaCapsule>filtreazaDupaCofeina(ArrayList<CafeaCapsule
 {
     ArrayList<CafeaCapsule>listaCafeaCapsule= new ArrayList<>();
     for(CafeaCapsule cafeaCapsule: listaInitialaCafeaCapsule)
-        if(cafeaCapsule.getBrand().equals(cofeina))
+        if(cafeaCapsule.getCofeina().equals(cofeina))
         listaCafeaCapsule.add(cafeaCapsule);
     return listaCafeaCapsule;
 }

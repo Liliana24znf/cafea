@@ -1,1 +1,3 @@
- 
+ [CafeaCapsule{brand=Jacobs, nivelulDeprajire=mare , metodaDeextractie=umeda, intensitate=mediu, densitate=mare, culoare=alb, preparare=automata, aciditatea=mare, corpolenta=scazuta, modulDeprocesare=uscata, tipulDeCapsule=dolcegusto, cofeina=da
+, CafeaCapsule{brand=Jacobs, nivelulDeprajire=mare , metodaDeextractie=umeda, intensitate=mare, densitate=mare, culoare=maro, preparare=automata, aciditatea=mare, corpolenta=mare, modulDeprocesare=umeda, tipulDeCapsule=nespreso, cofeina=nu
+]

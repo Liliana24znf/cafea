@@ -1,3 +1,13 @@
+/*  JButton genereazaBT = new JButton("Genereaza Cafea Macinata");
+    genereazaBT.setBounds(150, 350, 200, 30);
+    genereazaBT.addActionListener(new ActionListnerGenerareDate(null){
+        public void actionPerformed(ActionEvent e){
+            listaCafeaMacinata = GeneratorCafeaMacinata.genereazaRandomCafeaMacinata(1);
+            textArea.setText(" " + listaCafeaMacinata);
+        } 
+    });
+*/
+
 package Interfata;
 
 import java.util.ArrayList;
@@ -6,6 +16,10 @@ import java.awt.event.ActionListener;
 import java.awt.*;
 import javax.swing.*;
 
+import Filter.CafeaCapsuleFilter;
+import Filter.FilterCafeaMacinata;
+import Generator.GeneratorCafeaCapsule;
+import Generator.GeneratorCafeaMacinata;
 import cafea.CafeaCapsule;
 import cafea.CafeaMacinata;
 
@@ -39,41 +53,60 @@ public class TestInterfataComuna {
         nr.setFont(new java.awt.Font("Tahoma", 1, 12)); // fontul textului etichetei 
 		JButton genereazaBT = new JButton("Genereaza date"); // butonul
 		genereazaBT.setBounds(20, 50, 300, 30); // pozitia butonului 
-		genereazaBT.addActionListener(new ActionListnerGenerareDate(nrTF)); // adaugarea actiunii butonului
         genereazaBT.setBackground(new java.awt.Color(0, 255, 0)); // culoarea butonului
         genereazaBT.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului butonului
         genereazaBT.setFont(new java.awt.Font("Tahoma", 1, 15)); // fontul textului butonului
+        genereazaBT.addActionListener(new ActionListnerGenerareDate(nrTF){
+            public void actionPerformed(ActionEvent e){
+                listaCafeaMacinata = GeneratorCafeaMacinata.genereazaRandomCafeaMacinata(Integer.parseInt(nrTF.getText()));
+                textArea.setText(" " + listaCafeaMacinata);
+            } 
+        });
       
-        
         JLabel tipulDeMacinare = new JLabel("Tipul de macinare:"); // eticheta
         tipulDeMacinare.setBounds(20, 100, 130, 20); // pozitia etichetei
         JTextField tipulDeMacinareTF = new JTextField(); // campul de text
         tipulDeMacinareTF.setBounds(140, 100, 100, 20); // pozitia campului de text
         JButton tipulDeMacinareBT = new JButton("Filtreaza dupa tipul de macinare "); // butonul
         tipulDeMacinareBT.setBounds(20, 130, 300, 30); // pozitia butonului
-        tipulDeMacinareBT.addActionListener(new ActionListnerGenerareDate(tipulDeMacinareTF)); // adaugarea actiunii butonului  
         tipulDeMacinare.setForeground(new java.awt.Color(0, 0, 255));   // culoarea textului etichetei
         tipulDeMacinare.setFont(new java.awt.Font("Tahoma", 1, 12));    // fontul textului etichetei
         tipulDeMacinareBT.setBackground(new java.awt.Color(0, 255, 0)); // culoarea butonului
         tipulDeMacinareBT.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului butonului
         tipulDeMacinareBT.setFont(new java.awt.Font("Tahoma", 1, 15));  // fontul textului butonului
-
-
-
+        tipulDeMacinareBT.addActionListener(new ActionListnerGenerareDate(tipulDeMacinareTF){
+            public void actionPerformed(ActionEvent e){
+                ArrayList<CafeaMacinata> listaCafeaMacinataFiltrata = new ArrayList<CafeaMacinata>();
+                listaCafeaMacinataFiltrata = FilterCafeaMacinata.filtreazaDupatipulDeMacinare(listaCafeaMacinata, tipulDeMacinareTF.getText());
+                textArea.setText(" " + listaCafeaMacinataFiltrata);
+            } 
+        });
+  
+        
         JLabel tipulDeAparat = new JLabel("Tipul de aparat:");  // eticheta
         tipulDeAparat.setBounds(20, 180, 100, 20);  // pozitia etichetei
         JTextField tipulDeAparatTF = new JTextField();  // campul de text
         tipulDeAparatTF.setBounds(120, 180, 100, 20); // pozitia campului de text
         JButton tipulDeAparatBT = new JButton("Filtreaza dupa tipul de aparat "); // butonul
         tipulDeAparatBT.setBounds(20, 210, 300, 30);    // pozitia butonului
-        tipulDeAparatBT.addActionListener(new ActionListnerGenerareDate(tipulDeAparatTF));  // adaugarea actiunii butonului
         tipulDeAparat.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului etichetei
         tipulDeAparat.setFont(new java.awt.Font("Tahoma", 1, 12));  // fontul textului etichetei
         tipulDeAparatBT.setBackground(new java.awt.Color(0, 255, 0));   // culoarea butonului
         tipulDeAparatBT.setForeground(new java.awt.Color(0, 0, 255));   // culoarea textului butonului
         tipulDeAparatBT.setFont(new java.awt.Font("Tahoma", 1, 15));    // fontul textului butonului
+        tipulDeAparatBT.addActionListener(new ActionListnerGenerareDate(tipulDeAparatTF){
+            public void actionPerformed(ActionEvent e){
+                ArrayList<CafeaMacinata> listaCafeaMacinataFiltrata = new ArrayList<CafeaMacinata>();
+                listaCafeaMacinataFiltrata = FilterCafeaMacinata.filtreazaDupatipulDeMacinare(listaCafeaMacinata, tipulDeMacinareTF.getText());
+                ArrayList<CafeaMacinata> listaCafeaMacinataFiltrata2 = new ArrayList<CafeaMacinata>();
+                listaCafeaMacinataFiltrata2 = FilterCafeaMacinata.filtreazaDupatipulDeAparat(listaCafeaMacinataFiltrata, tipulDeAparatTF.getText());
+                textArea.setText(" " + listaCafeaMacinataFiltrata2);
+            }
+            
+        });
+        
 
-        //introduc in partea dreapta sus, eticheta si campul de text din TestInterfataCafeaCapsule
+        
         JLabel nr2 = new JLabel("Cafea capsule:"); // eticheta
         nr2.setBounds(400, 20, 150, 20); // pozitia etichetei
         JTextField nrTF2 = new JTextField(); // campul de text
@@ -82,12 +115,15 @@ public class TestInterfataComuna {
         nr2.setFont(new java.awt.Font("Tahoma", 1, 12)); // fontul textului etichetei
         JButton genereazaBT2 = new JButton("Genereaza date"); // butonul
         genereazaBT2.setBounds(400, 50, 300, 30); // pozitia butonului
-        genereazaBT2.addActionListener(new ActionListnerGenerareDateCafeaCapsule(nrTF2)); // adaugarea actiunii butonului
         genereazaBT2.setBackground(new java.awt.Color(0, 255, 0)); // culoarea butonului
         genereazaBT2.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului butonului
         genereazaBT2.setFont(new java.awt.Font("Tahoma", 1, 15)); // fontul textului butonului
-        //textul generat de genereazaBT2 sa fie afisat in text area
-
+        genereazaBT2.addActionListener(new ActionListnerGenerareDateCafeaCapsule(nrTF2){
+            public void actionPerformed(ActionEvent e){
+                listaCafeaCapsule = GeneratorCafeaCapsule.genereazaRandomCafeaCapsule(Integer.parseInt(nrTF2.getText()));
+                textArea.setText(" " + listaCafeaCapsule);
+            }
+        }); 
 
 
         //brandul din cafea capsule
@@ -97,12 +133,21 @@ public class TestInterfataComuna {
         brandulTF.setBounds(500, 100, 100, 20); // pozitia campului de text
         JButton brandulBT = new JButton("Filtreaza dupa brandul "); // butonul
         brandulBT.setBounds(400, 130, 300, 30); // pozitia butonului
-        brandulBT.addActionListener(new ActionListenerFiltrareCafeaCapsule(brandulTF)); // adaugarea actiunii butonului
         brandul.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului etichetei
         brandul.setFont(new java.awt.Font("Tahoma", 1, 12)); // fontul textului etichetei
         brandulBT.setBackground(new java.awt.Color(0, 255, 0)); // culoarea butonului
         brandulBT.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului butonului
         brandulBT.setFont(new java.awt.Font("Tahoma", 1, 15)); // fontul textului butonului
+        brandulBT.addActionListener(new ActionListenerFiltrareCafeaCapsule(brandulTF){
+            public void actionPerformed(ActionEvent e){
+                ArrayList<CafeaCapsule> listaCafeaCapsuleFiltrata = new ArrayList<CafeaCapsule>();
+                listaCafeaCapsuleFiltrata = CafeaCapsuleFilter.filtreazaDupaBrand(listaCafeaCapsule, brandulTF.getText());
+                textArea.setText(" " + listaCafeaCapsuleFiltrata);
+            }
+        });
+
+
+       
 
         //cofeina
         JLabel cofeina = new JLabel("Cofeina:"); // eticheta
@@ -111,12 +156,21 @@ public class TestInterfataComuna {
         cofeinaTF.setBounds(500, 180, 100, 20); // pozitia campului de text
         JButton cofeinaBT = new JButton("Filtreaza dupa cofeina "); // butonul
         cofeinaBT.setBounds(400, 210, 300, 30); // pozitia butonului
-        cofeinaBT.addActionListener(new ActionListenerFiltrareCafeaCapsule2(cofeinaTF)); // adaugarea actiunii butonului
         cofeina.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului etichetei
         cofeina.setFont(new java.awt.Font("Tahoma", 1, 12)); // fontul textului etichetei
         cofeinaBT.setBackground(new java.awt.Color(0, 255, 0)); // culoarea butonului
         cofeinaBT.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului butonului
         cofeinaBT.setFont(new java.awt.Font("Tahoma", 1, 15)); // fontul textului butonului
+        cofeinaBT.addActionListener(new ActionListenerFiltrareCafeaCapsule2(cofeinaTF){
+            public void actionPerformed(ActionEvent e){
+                ArrayList<CafeaCapsule> listaCafeaCapsuleFiltrata = new ArrayList<CafeaCapsule>();
+                listaCafeaCapsuleFiltrata = CafeaCapsuleFilter.filtreazaDupaBrand(listaCafeaCapsuleFiltrata, brandulTF.getText());
+                ArrayList<CafeaCapsule> listaCafeaCapsuleFiltrata2 = new ArrayList<CafeaCapsule>();
+                listaCafeaCapsuleFiltrata2 = CafeaCapsuleFilter.filtreazaDupaCofeina(listaCafeaCapsuleFiltrata, cofeinaTF.getText());
+                textArea.setText(" " + listaCafeaCapsuleFiltrata2); 
+            }
+        }); 
+
 
         //Butoane	
         JButton saveButton = new JButton("Salvare ListaGenerata");

@@ -36,9 +36,9 @@ public class GeneratorCafeaMacinata {
             String aciditatea = aciditate[new Random().nextInt(aciditate.length)];
             String corpolenta = corpolent[new Random().nextInt(corpolent.length)];
             String modulDeprocesarii = modulDeprocesare[new Random().nextInt(modulDeprocesare.length)];
-            String tipulDeMacinare = tipuriDeMacinare[new Random().nextInt(tipuriDeMacinare.length)];
+            String TipulDeMacinare = tipuriDeMacinare[new Random().nextInt(tipuriDeMacinare.length)];
             String tipulDeAparat = tipuriDeAparat[new Random().nextInt(tipuriDeAparat.length)];
-            oCafeaMacinata = new CafeaMacinata( tipulDeMacinare , tipulDeAparat , brandul ,  nivelulDeprajirii ,  metodaDeextractiei , intensitatea , densitatea , culoarea ,  prepararea , aciditatea , corpolenta , modulDeprocesarii );
+            oCafeaMacinata = new CafeaMacinata( TipulDeMacinare , tipulDeAparat , brandul ,  nivelulDeprajirii ,  metodaDeextractiei , intensitatea , densitatea , culoarea ,  prepararea , aciditatea , corpolenta , modulDeprocesarii );
             listaCafeaMacinata.add(oCafeaMacinata);
         }
         return listaCafeaMacinata;
@@ -65,6 +65,11 @@ public class GeneratorCafeaMacinata {
             listaCafeaMacinata[i] = oCafeaMacinata;
         }
         return listaCafeaMacinata;
+    }
+
+    public static ArrayList<CafeaMacinata> filtreazaDupaTipulDeMacinare(ArrayList<CafeaMacinata> listaCafeaMacinata,
+            String text) {
+        return null;
     }
 
 
