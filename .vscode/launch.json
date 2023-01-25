@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TestInterfataComuna",
+            "request": "launch",
+            "mainClass": "Interfata.TestInterfataComuna",
+            "projectName": "cafea"
+        },
+        {
+            "type": "java",
             "name": "Launch TestInterfataCafeaCapsule",
             "request": "launch",
             "mainClass": "Interfata.TestInterfataCafeaCapsule",
