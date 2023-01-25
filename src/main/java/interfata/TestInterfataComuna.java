@@ -1,13 +1,3 @@
-/*  JButton genereazaBT = new JButton("Genereaza Cafea Macinata");
-    genereazaBT.setBounds(150, 350, 200, 30);
-    genereazaBT.addActionListener(new ActionListnerGenerareDate(null){
-        public void actionPerformed(ActionEvent e){
-            listaCafeaMacinata = GeneratorCafeaMacinata.genereazaRandomCafeaMacinata(1);
-            textArea.setText(" " + listaCafeaMacinata);
-        } 
-    });
-*/
-
 package Interfata;
 
 import java.util.ArrayList;
@@ -124,6 +114,7 @@ public class TestInterfataComuna {
                 textArea.setText(" " + listaCafeaCapsule);
             }
         }); 
+        
 
 
         //brandul din cafea capsule
@@ -164,13 +155,17 @@ public class TestInterfataComuna {
         cofeinaBT.addActionListener(new ActionListenerFiltrareCafeaCapsule2(cofeinaTF){
             public void actionPerformed(ActionEvent e){
                 ArrayList<CafeaCapsule> listaCafeaCapsuleFiltrata = new ArrayList<CafeaCapsule>();
-                listaCafeaCapsuleFiltrata = CafeaCapsuleFilter.filtreazaDupaBrand(listaCafeaCapsuleFiltrata, brandulTF.getText());
+                listaCafeaCapsuleFiltrata = CafeaCapsuleFilter.filtreazaDupaBrand(listaCafeaCapsule, brandulTF.getText());
+                textArea.setText(" " + listaCafeaCapsuleFiltrata);
+                System.out.println("Mesajul1 " + listaCafeaCapsuleFiltrata);
                 ArrayList<CafeaCapsule> listaCafeaCapsuleFiltrata2 = new ArrayList<CafeaCapsule>();
                 listaCafeaCapsuleFiltrata2 = CafeaCapsuleFilter.filtreazaDupaCofeina(listaCafeaCapsuleFiltrata, cofeinaTF.getText());
-                textArea.setText(" " + listaCafeaCapsuleFiltrata2); 
+                textArea.setText(" " + listaCafeaCapsuleFiltrata2);
+                System.out.println("Mesajul2 " + listaCafeaCapsuleFiltrata2);
+
             }
         }); 
-
+       
 
         //Butoane	
         JButton saveButton = new JButton("Salvare ListaGenerata");
