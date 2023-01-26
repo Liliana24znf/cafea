@@ -1,0 +1,2 @@
+Proiectul meu, Coffee Crafter: Create and Filter your Perfect Cup, este un program Java creat in Visual Studio Code, 
+care se concentreaza pe generarea si filtrarea informatiilor depsre cafea. 

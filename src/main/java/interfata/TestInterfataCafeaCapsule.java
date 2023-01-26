@@ -13,6 +13,8 @@ public class TestInterfataCafeaCapsule {
     TestInterfataCafeaCapsule()
     {
         JFrame frame = new JFrame();
+        //adaugarea unui text area in care se vor afisa datele
+        
         
         
         JLabel nr = new JLabel ("Nr. CafeaCapsule:");
@@ -69,11 +71,20 @@ public class TestInterfataCafeaCapsule {
         
         frame.add(afiseazaBT);
         
-        frame.setSize(400,400);
+        frame.setSize(800,400);
         frame.setTitle("CafeaCAPSULE");
         frame.setLayout(null);
         frame.setVisible(true);
         frame.setResizable(false);
+
+        //adaugarea unui textarea in care se vor afisa datele 
+        JTextArea textArea = new JTextArea();
+        textArea.setBounds(300, 20, 400, 300);
+        frame.add(textArea);
+        
+      
+
+
     }
         
         public static void main(String[] args) {

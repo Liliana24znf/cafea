@@ -1,3 +1,11 @@
  [CafeaCapsule{brand=Jacobs, nivelulDeprajire=scazut , metodaDeextractie=uscata, intensitate=mediu, densitate=scazuta, culoare=alb, preparare=manuala, aciditatea=mediu, corpolenta=mediu, modulDeprocesare=uscata, tipulDeCapsule=nespreso, cofeina=da
 ] [CafeaCapsule{brand=Jacobs, nivelulDeprajire=scazut , metodaDeextractie=uscata, intensitate=mediu, densitate=scazuta, culoare=alb, preparare=manuala, aciditatea=mediu, corpolenta=mediu, modulDeprocesare=uscata, tipulDeCapsule=nespreso, cofeina=da
+] [Brandul cafelei este: LavazzaNivelul de prajire al cafelei este: mediu Metoda de extractie a cafelei este: filtreIntensitatea cafelei este: slaba Densitatea cafelei este: mediuCuloarea cafelei este: mediuPrepararea cafelei este: lungo Aciditatea cafelei este: scazutaCorpolenta cafelei este: densaModul de procesare al cafelei este: spalare umeda
+Tipul de macinare: fin Tipul de aparat: automat 
+, Brandul cafelei este: JacobsNivelul de prajire al cafelei este: intens Metoda de extractie a cafelei este: presiuneIntensitatea cafelei este: puternica Densitatea cafelei este: slabaCuloarea cafelei este: slabaPrepararea cafelei este: espresso Aciditatea cafelei este: mediuCorpolenta cafelei este: medieModul de procesare al cafelei este: spalare umeda
+Tipul de macinare: fin Tipul de aparat: automat 
+] [Brandul cafelei este: LavazzaNivelul de prajire al cafelei este: mediu Metoda de extractie a cafelei este: filtreIntensitatea cafelei este: slaba Densitatea cafelei este: mediuCuloarea cafelei este: mediuPrepararea cafelei este: lungo Aciditatea cafelei este: scazutaCorpolenta cafelei este: densaModul de procesare al cafelei este: spalare umeda
+Tipul de macinare: fin Tipul de aparat: automat 
+, Brandul cafelei este: JacobsNivelul de prajire al cafelei este: intens Metoda de extractie a cafelei este: presiuneIntensitatea cafelei este: puternica Densitatea cafelei este: slabaCuloarea cafelei este: slabaPrepararea cafelei este: espresso Aciditatea cafelei este: mediuCorpolenta cafelei este: medieModul de procesare al cafelei este: spalare umeda
+Tipul de macinare: fin Tipul de aparat: automat 
 ]

@@ -258,7 +258,35 @@ public class TestInterfataComuna {
     btnClear.setBackground(new java.awt.Color(0, 255, 0)); // culoarea butonului
     btnClear.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului butonului
     btnClear.setFont(new java.awt.Font("Tahoma", 1, 15)); // fontul textului butonului
-    
+
+
+        //adaugarea pe ecran a unui buton importa, care la apasare va afisa in textrea textul dintr un document selectat din calculator
+        JButton importa = new JButton("Importa");
+        importa.setBounds(100,800,800,40);
+        importa.setBackground(new java.awt.Color(0, 255, 0)); // culoarea butonului
+        importa.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului butonului
+        importa.setFont(new java.awt.Font("Tahoma", 1, 15)); // fontul textului butonului
+        importa.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFileChooser chooser = new JFileChooser();
+                chooser.showOpenDialog(null);
+                File f = chooser.getSelectedFile();
+                String filename = f.getAbsolutePath();
+                try {
+                    FileReader reader = new FileReader(filename);
+                    BufferedReader br = new BufferedReader(reader);
+                    textArea.read(br, null);
+                    br.close();
+                    textArea.requestFocus();
+                } catch (Exception e1) {
+                    JOptionPane.showMessageDialog(null, e1);
+                }
+            }
+        });
+
+        frame.add(importa);
+
 
         frame.add(nr); 
         frame.add(nrTF);

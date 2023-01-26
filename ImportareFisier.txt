@@ -1,0 +1,9 @@
+Brandul cafelei este: TchiboNivelul de prajire al cafelei este: usor Metoda de extractie a cafelei este: presiuneIntensitatea cafelei este: mediu 4
+Densitatea cafelei este: puternicaCuloarea cafelei este: slabaPrepararea cafelei este: cappuccino Aciditatea cafelei este: mediu
+\Corpolenta cafelei este: solidaModul de procesare al cafelei este: spalare umeda
+Tipul de macinare: gros Tipul de aparat: automat 
+Brandul cafelei este: TchiboNivelul de prajire al cafelei este: usor 
+Metoda de extractie a cafelei este: presiuneIntensitatea cafelei este: mediu 
+Densitatea cafelei este: puternicaCuloarea cafelei este: slabaPrepararea cafelei este: cappuccino Aciditatea cafelei este: mediu
+Corpolenta cafelei este: solidaModul de procesare al cafelei este: spalare umeda
+Tipul de macinare: gros Tipul de aparat: automat 
