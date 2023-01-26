@@ -33,7 +33,7 @@ public class TestInterfataComuna {
         //culoare fundal
         JFrame frame = new JFrame();
         frame.getContentPane().setBackground(Color.decode("#00BFFF")); 
-        frame.getContentPane().setForeground(Color.decode("#00BFFF")); //
+        frame.getContentPane().setForeground(Color.decode("#00BFFF")); 
 
         JLabel nr = new JLabel("Cafea macinata:"); // eticheta
 		nr.setBounds(100, 20, 150, 20); // pozitia etichetei
@@ -52,7 +52,7 @@ public class TestInterfataComuna {
                 textArea.setText(" " + listaCafeaMacinata);
             } 
         });
-      
+       
         JLabel tipulDeMacinare = new JLabel("Tipul de macinare:"); // eticheta
         tipulDeMacinare.setBounds(100, 100, 130, 20); // pozitia etichetei
         JTextField tipulDeMacinareTF = new JTextField(); // campul de text
