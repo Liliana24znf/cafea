@@ -28,7 +28,7 @@ public class TestInterfataComuna {
         textArea.setEditable(false);
 		textArea.setFont(new Font("Arial", Font.PLAIN, 24));
         // Seteaza pozitia si marimea textarea-ului
-        textArea.setBounds(20, 400, 700, 350);
+        textArea.setBounds(50, 250, 900, 500);
 
         //culoare fundal
         JFrame frame = new JFrame();
@@ -36,13 +36,13 @@ public class TestInterfataComuna {
         frame.getContentPane().setForeground(Color.decode("#00BFFF")); //
 
         JLabel nr = new JLabel("Cafea macinata:"); // eticheta
-		nr.setBounds(20, 20, 150, 20); // pozitia etichetei
+		nr.setBounds(100, 20, 150, 20); // pozitia etichetei
 		JTextField nrTF = new JTextField(); // campul de text
-		nrTF.setBounds(120, 20, 100, 20); // pozitia campului de text
+		nrTF.setBounds(250, 20, 100, 20); // pozitia campului de text
         nr.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului etichetei
         nr.setFont(new java.awt.Font("Tahoma", 1, 12)); // fontul textului etichetei 
 		JButton genereazaBT = new JButton("Genereaza date"); // butonul
-		genereazaBT.setBounds(20, 50, 300, 30); // pozitia butonului 
+		genereazaBT.setBounds(100, 50, 300, 30); // pozitia butonului 
         genereazaBT.setBackground(new java.awt.Color(0, 255, 0)); // culoarea butonului
         genereazaBT.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului butonului
         genereazaBT.setFont(new java.awt.Font("Tahoma", 1, 15)); // fontul textului butonului
@@ -54,11 +54,11 @@ public class TestInterfataComuna {
         });
       
         JLabel tipulDeMacinare = new JLabel("Tipul de macinare:"); // eticheta
-        tipulDeMacinare.setBounds(20, 100, 130, 20); // pozitia etichetei
+        tipulDeMacinare.setBounds(100, 100, 130, 20); // pozitia etichetei
         JTextField tipulDeMacinareTF = new JTextField(); // campul de text
-        tipulDeMacinareTF.setBounds(140, 100, 100, 20); // pozitia campului de text
+        tipulDeMacinareTF.setBounds(250, 100, 100, 20); // pozitia campului de text
         JButton tipulDeMacinareBT = new JButton("Filtreaza dupa tipul de macinare "); // butonul
-        tipulDeMacinareBT.setBounds(20, 130, 300, 30); // pozitia butonului
+        tipulDeMacinareBT.setBounds(100, 130, 300, 30); // pozitia butonului
         tipulDeMacinare.setForeground(new java.awt.Color(0, 0, 255));   // culoarea textului etichetei
         tipulDeMacinare.setFont(new java.awt.Font("Tahoma", 1, 12));    // fontul textului etichetei
         tipulDeMacinareBT.setBackground(new java.awt.Color(0, 255, 0)); // culoarea butonului
@@ -74,11 +74,11 @@ public class TestInterfataComuna {
   
         
         JLabel tipulDeAparat = new JLabel("Tipul de aparat:");  // eticheta
-        tipulDeAparat.setBounds(20, 180, 100, 20);  // pozitia etichetei
+        tipulDeAparat.setBounds(100, 180, 100, 20);  // pozitia etichetei
         JTextField tipulDeAparatTF = new JTextField();  // campul de text
-        tipulDeAparatTF.setBounds(120, 180, 100, 20); // pozitia campului de text
+        tipulDeAparatTF.setBounds(250, 180, 100, 20); // pozitia campului de text
         JButton tipulDeAparatBT = new JButton("Filtreaza dupa tipul de aparat "); // butonul
-        tipulDeAparatBT.setBounds(20, 210, 300, 30);    // pozitia butonului
+        tipulDeAparatBT.setBounds(100, 210, 300, 30);    // pozitia butonului
         tipulDeAparat.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului etichetei
         tipulDeAparat.setFont(new java.awt.Font("Tahoma", 1, 12));  // fontul textului etichetei
         tipulDeAparatBT.setBackground(new java.awt.Color(0, 255, 0));   // culoarea butonului
@@ -98,13 +98,13 @@ public class TestInterfataComuna {
 
         
         JLabel nr2 = new JLabel("Cafea capsule:"); // eticheta
-        nr2.setBounds(400, 20, 150, 20); // pozitia etichetei
+        nr2.setBounds(600, 20, 150, 20); // pozitia etichetei
         JTextField nrTF2 = new JTextField(); // campul de text
-        nrTF2.setBounds(500, 20, 100, 20); // pozitia campului de text
+        nrTF2.setBounds(700, 20, 100, 20); // pozitia campului de text
         nr2.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului etichetei
         nr2.setFont(new java.awt.Font("Tahoma", 1, 12)); // fontul textului etichetei
         JButton genereazaBT2 = new JButton("Genereaza date"); // butonul
-        genereazaBT2.setBounds(400, 50, 300, 30); // pozitia butonului
+        genereazaBT2.setBounds(600, 50, 300, 30); // pozitia butonului
         genereazaBT2.setBackground(new java.awt.Color(0, 255, 0)); // culoarea butonului
         genereazaBT2.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului butonului
         genereazaBT2.setFont(new java.awt.Font("Tahoma", 1, 15)); // fontul textului butonului
@@ -119,11 +119,11 @@ public class TestInterfataComuna {
 
         //brandul din cafea capsule
         JLabel brandul = new JLabel("Brandul:"); // eticheta
-        brandul.setBounds(400, 100, 100, 20); // pozitia etichetei
+        brandul.setBounds(600, 100, 100, 20); // pozitia etichetei
         JTextField brandulTF = new JTextField(); // campul de text
-        brandulTF.setBounds(500, 100, 100, 20); // pozitia campului de text
+        brandulTF.setBounds(700, 100, 100, 20); // pozitia campului de text
         JButton brandulBT = new JButton("Filtreaza dupa brandul "); // butonul
-        brandulBT.setBounds(400, 130, 300, 30); // pozitia butonului
+        brandulBT.setBounds(600, 130, 300, 30); // pozitia butonului
         brandul.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului etichetei
         brandul.setFont(new java.awt.Font("Tahoma", 1, 12)); // fontul textului etichetei
         brandulBT.setBackground(new java.awt.Color(0, 255, 0)); // culoarea butonului
@@ -142,11 +142,11 @@ public class TestInterfataComuna {
 
         //cofeina
         JLabel cofeina = new JLabel("Cofeina:"); // eticheta
-        cofeina.setBounds(400, 180, 100, 20); // pozitia etichetei
+        cofeina.setBounds(600, 180, 100, 20); // pozitia etichetei
         JTextField cofeinaTF = new JTextField(); // campul de text
-        cofeinaTF.setBounds(500, 180, 100, 20); // pozitia campului de text
+        cofeinaTF.setBounds(700, 180, 100, 20); // pozitia campului de text
         JButton cofeinaBT = new JButton("Filtreaza dupa cofeina "); // butonul
-        cofeinaBT.setBounds(400, 210, 300, 30); // pozitia butonului
+        cofeinaBT.setBounds(600, 210, 300, 30); // pozitia butonului
         cofeina.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului etichetei
         cofeina.setFont(new java.awt.Font("Tahoma", 1, 12)); // fontul textului etichetei
         cofeinaBT.setBackground(new java.awt.Color(0, 255, 0)); // culoarea butonului
@@ -169,11 +169,26 @@ public class TestInterfataComuna {
 
         //Butoane	
         JButton saveButton = new JButton("Salvare ListaGenerata");
-        saveButton.setBounds(100,300,200,30);
+        saveButton.setBounds(130,800,250,30);
+        saveButton.setBackground(new java.awt.Color(0, 255, 0)); // culoarea butonului
+        saveButton.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului butonului
+        saveButton.setFont(new java.awt.Font("Tahoma", 1, 15)); // fontul textului butonului
         JButton saveButton2 = new JButton("Salvare ListaFiltrata");
-        saveButton2.setBounds(100,350,200,30);
+        saveButton2.setBounds(130,850,250,30);
+        saveButton2.setBackground(new java.awt.Color(0, 255, 0)); // culoarea butonului
+        saveButton2.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului butonului
+        saveButton2.setFont(new java.awt.Font("Tahoma", 1, 15)); // fontul textului butonului
         JButton clearButton2 = new JButton("Golire ListaFiltrataGenerata.txt");
-        clearButton2.setBounds(400,350,250,30);
+        clearButton2.setBounds(500,800,350,30);
+        clearButton2.setBackground(new java.awt.Color(0, 255, 0)); // culoarea butonului
+        clearButton2.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului butonului
+        clearButton2.setFont(new java.awt.Font("Tahoma", 1, 15)); // fontul textului butonului
+        JButton clearButton = new JButton("Golire ListaGenerata.txt");
+        clearButton.setBounds(500,850,350,30);
+        clearButton.setBackground(new java.awt.Color(0, 255, 0)); // culoarea butonului
+        clearButton.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului butonului
+        clearButton.setFont(new java.awt.Font("Tahoma", 1, 15)); // fontul textului butonului
+
         
 
         // Adauga un listener pentru buton
@@ -204,9 +219,6 @@ public class TestInterfataComuna {
                 }
             });
     
-    
-    JButton clearButton = new JButton("Golire ListaGenerata.txt");
-    clearButton.setBounds(400,300,250,30);
     // Adauga un listener pentru buton
     clearButton.addActionListener(new ActionListener() {
         public void actionPerformed(ActionEvent e) {
@@ -242,7 +254,11 @@ public class TestInterfataComuna {
         textArea.setText(" ");
     }
 });
-    btnClear.setBounds(20,750,700,40);
+    btnClear.setBounds(100,750,800,40);
+    btnClear.setBackground(new java.awt.Color(0, 255, 0)); // culoarea butonului
+    btnClear.setForeground(new java.awt.Color(0, 0, 255)); // culoarea textului butonului
+    btnClear.setFont(new java.awt.Font("Tahoma", 1, 15)); // fontul textului butonului
+    
 
         frame.add(nr); 
         frame.add(nrTF);
@@ -279,7 +295,7 @@ public class TestInterfataComuna {
         frame.add(textArea);    
         frame.add(btnClear);
         frame.add(saveButton);
-        frame.setSize(800, 900);
+        frame.setSize(1000, 1000);
         frame.setTitle("Interfata Grafica");
         frame.setLayout(null);
         frame.setVisible(true);
