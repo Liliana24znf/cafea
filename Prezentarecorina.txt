@@ -1,0 +1,12 @@
+Poiect Cafea
+Proiectul Cafea este un proiect java in care am ales sa prezint o modalitate in care sa imi filtrez tipul de cafea care este pe gustul meu. 
+Aici am prezentat diferite tipuri de branduri si caracteristicile cafelelor printr-un cod in java care ma poate ajuta.
+In colaborare cu Zanfir Liliana , am prezentat 2 metode de ati alege cafeaua:macinata sau capsule ,in care se poate alege dupa bunul plac.
+Proiectul se bazeaza pe urmatoarele cerinte:
+1.Crearea unei interfete Bauturi
+2.Crearea Clasei Cafea de unde am generat cele doua metode:CAPSULE,cea aleasa de mine, si Macinata,cea aleasa de colega mea.
+3.Clasa Cafea Capsule,unde am prezentat anumite caracteristici ale cafelei in forma capsule.
+4. Clasa Generator Cafea Capsule: aceasta este o clasa care contine metodele pentru a genera random cafeaua capsule.
+5. Clasa Filter Cafea Capsule: aceasta contine un program care filtreaza cafea in functie de cerintele dorite.
+6. Pachetul Interfata: Acesta contine clase pentru a ma ajuta sa creez o interfata in care sa imi fie mai usor sa generez 
+si sa filtrez cafeaua aleasa de mine.
